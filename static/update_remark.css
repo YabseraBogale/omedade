@@ -1,0 +1,62 @@
+*{
+    padding: 2px;
+    font-size: large;
+}
+
+
+
+nav{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.new{
+    background-color:green;
+    color:aliceblue;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.new:hover{
+    background-color: aliceblue;
+    color: green;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+}
+
+
+.home{
+    background-color:rgb(31, 109, 211);
+    color:aliceblue;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.home:hover{
+    background-color: aliceblue;
+    color: rgb(31, 109, 211);
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+}
+
+.date{
+    background-color:cornflowerblue;
+    color:aliceblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.date:hover{
+    color:cornflowerblue;
+    background-color:aliceblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+
+textarea{
+    resize: none;
+}

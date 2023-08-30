@@ -1,0 +1,25 @@
+*{
+    padding: 2px;
+    font-size: large;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+.home{
+    background-color:rgb(31, 109, 211);
+    color:aliceblue;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.home:hover{
+    background-color: aliceblue;
+    color: rgb(31, 109, 211);
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+}

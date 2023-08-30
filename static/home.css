@@ -1,0 +1,65 @@
+*{
+    padding: 2px;
+    font-size: large;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+input{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.new{
+    background-color:green;
+    color:aliceblue;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.new:hover{
+    background-color: aliceblue;
+    color: green;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+}
+
+.update{
+    color: aliceblue;
+    background-color: purple;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+
+.update:hover{
+    color:purple;
+    background-color: aliceblue;
+    border: 2px solid rgb(34, 0, 128);
+    border-radius: 5px;
+}
+
+.date{
+    background-color:cornflowerblue;
+    color:aliceblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.date:hover{
+    color:cornflowerblue;
+    background-color:aliceblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+table{
+    margin-top: 10px;
+}
+
