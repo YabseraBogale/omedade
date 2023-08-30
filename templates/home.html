@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+    <title>Home</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000" method="POST">
+        <h2>
+            Departement <input type="text" name="departement" id="departement" placeholder="E.g Bolle">
+            <input type="submit" value="enter">
+        </h2>
+    </form>
+    
+    <nav>
+        <a href="http://127.0.0.1:5000/new_plate" class="new">new plate</a>
+        <a href="http://127.0.0.1:5000/update_remark"class="update">update</a>
+        <a href="http://127.0.0.1:5000/date" class="date">date</a>
+    </nav>
+
+
+
+    <div class="infoPlate">
+       <table>
+            {% if lst=="departement dosesn't exist": %}
+                <tr>
+                    <td>
+                        <h2>{{lst}}</h2>
+                    </td>
+                </tr>
+            {% else %}
+                {% for data in lst: %}
+                    {% if data[1]=="": %}
+                <tr>
+                    <td style="margin: 5px;">
+                            {{data[0]}}
+                    </td>
+                    <td>
+                            {{"There is no remark"}}
+                    </td>
+                    <td>
+                        <a href="http://127.0.0.1:5000/update_remark" class="add">update</a>
+                    </td>
+                </tr>
+                    {% else %}
+                <tr> 
+                        <td>
+                                {{data[0]}}
+                        </td>
+                        <td>
+                            {{data[1]}}
+                        </td>
+                        <td>
+                            <a href="http://127.0.0.1:5000/update_remark" class="add">update</a>
+                        </td>
+                </tr>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+       </table>
+    </div>
+<script src="{{url_for('static',filename='home.js')}}"></script>
+</body>
+</html>
