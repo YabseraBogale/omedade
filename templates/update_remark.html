@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='update_remark.css')}}">
+    <title>Update</title>
+</head>
+<body>
+    <h2>
+        Update Remark
+    </h2>
+    <nav>
+        <a href="http://127.0.0.1:5000/new_plate" class="new">new</a>
+        <a href="http://127.0.0.1:5000" class="home">home</a>
+        <a href="http://127.0.0.1:5000/date" class="date">date</a>
+    </nav>
+    <form action="http://127.0.0.1:5000/update_remark" method="post">
+        <h2>
+            Plate Number {% if plate_no=='': %}
+                            {{plate_no}}
+                        {% else %}
+                        <input type="text" name="plate_no" id="" placeholder="Eg. 3AAA45" required>
+                        {% endif %}
+        </h2>
+        <h2>
+            Remark Update
+        </h2>
+        <textarea name="remark" id="" cols="30" rows="10"></textarea>
+        <p>
+            <input type="submit" value="Enter">
+            <input type="reset" value="Cancel">
+        </p>
+    </form>
+</body>
+</html>

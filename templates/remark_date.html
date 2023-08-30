@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='remark_date.css')}}">
+    <title>Date</title>
+</head>
+<body>
+    <h1>Remark Date</h1>
+    <nav>
+        <a href="http://127.0.0.1:5000/update_remark" class="update">update</a>
+        <a href="http://127.0.0.1:5000" class="home">home</a>
+        <a href="http://127.0.0.1:5000/new_plate" class="new">new</a>
+    </nav>
+    <form action="" method="post">
+        <h2>
+            Plate Number <input type="text" name="plate_no" id="" placeholder="Eg. 3AAA234" required>
+        </h2>
+        <input type="submit" value="enter">
+        <input type="reset" value="Cancle">
+    </form>
+    <table>
+        {{date}}
+    </table>
+</body>
+</html>

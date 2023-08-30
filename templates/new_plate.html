@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='new_plate.css')}}">
+    <title>Plate Number</title>
+</head>
+<body>
+    <div class="plateinfo">
+        <h2>Plate Number</h2>
+        <nav>
+            <a href="http://127.0.0.1:5000/update_remark" class="update">update</a>
+            <a href="http://127.0.0.1:5000" class="home">home</a>
+            <a href="http://127.0.0.1:5000/date" class="date">date</a>
+        </nav>
+    </div>
+    <form action="http://127.0.0.1:5000/new_plate" method="post">
+        <h2>
+            Departement <input type="text" name="departement" id="new_plate" placeholder="Eg. Finace" required>
+        </h2>
+        <h2>
+            Plate Number <input type="text" name="new_plate" id="" placeholder="Eg. 23AA343" required>
+        </h2>
+        <h2>
+            Remark
+        </h2>
+        <textarea name="remark" id="" cols="30" rows="10"></textarea>
+        <p>
+            <input type="submit" value="Enter">
+            <input type="reset" value="Cancel">
+        </p>
+    </form>
+</body>
+</html>
